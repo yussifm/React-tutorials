@@ -1,12 +1,13 @@
 import './App.css';
-import UseStateCunter from './usestate/UseStateCunter';
+import Useeffect1 from './useEffect/Useeffect1';
 
 function App() {
   
+  
   return (
     <div className="App">
-      <h2>Usestate</h2>
-     <UseStateCunter />
+      <h4>Usestate, UseEffects</h4>
+     <Useeffect1 />
     </div>
   );
 }
