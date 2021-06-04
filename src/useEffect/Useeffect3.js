@@ -29,26 +29,30 @@ const Useeffect3 = () => {
 								width: "30%",
 								display: "flex",
 								flexDirection: "row",
-								alignContent: "space-between",
-								justifyContent: "space-between",
 								padding: "10px",
 								margin: "10px",
 								borderRadius: "10px",
-								backgroundColor: "lightBlue",
+                                backgroundColor: "lightBlue",
+                                alignItems: 'flex-start',
+                                justifyItems: 'baseline'
 							}}
 						>
 							<img
 								src={avatar_url}
 								alt={login}
-								style={{ width: "100px", height: "100px", borderRadius: "50%" }}
+								style={{
+									width: "100px",
+									height: "100px",
+									borderRadius: "50%",
+									marginRight: "20px",
+								}}
 							/>
 							<div
 								style={{
 									display: "flex",
 									flexDirection: "column",
-									alignContent: "flex-start",
-                                    justifyContent: "start",
-                                   
+									alignItems: 'baseline'
+									
 								}}
 							>
 								<h2>{login}</h2>
