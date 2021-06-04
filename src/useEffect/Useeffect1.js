@@ -10,7 +10,7 @@ const Useeffect1 = () => {
             document.title = `New title update ${value}`;
         }
         
-    })
+    }, [value])
     
     return (
         <>

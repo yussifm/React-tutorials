@@ -1,5 +1,5 @@
 import './App.css';
-import Useeffect1 from './useEffect/Useeffect1';
+import Useeffect3 from './useEffect/Useeffect3';
 
 function App() {
   
@@ -7,7 +7,7 @@ function App() {
   return (
     <div className="App">
       <h4>Usestate, UseEffects</h4>
-     <Useeffect1 />
+     <Useeffect3 />
     </div>
   );
 }
