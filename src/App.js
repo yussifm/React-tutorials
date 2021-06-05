@@ -1,5 +1,5 @@
 import './App.css';
-import Show from './Conditional-rendering/show';
+import ControlInput from './Forms/ControlInput';
 
 function App() {
   
@@ -7,7 +7,7 @@ function App() {
   return (
     <div className="App">
       
-     <Show />
+      <ControlInput />
     </div>
   );
 }
