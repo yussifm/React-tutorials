@@ -14,6 +14,7 @@ const Useeffect1 = () => {
     
     return (
         <>
+            <h4>Usestate, UseEffects</h4>
             <h2>UseEffect</h2>
             <h1>{value}</h1>
             <button onClick={() => setValue(value +1)}>Click</button>

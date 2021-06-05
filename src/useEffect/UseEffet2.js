@@ -16,6 +16,7 @@ const UseEffet2 = () => {
 
     return (
         <>
+            <h4>Usestate, UseEffects</h4>
             <h2>{ width} px</h2>
         </>
     )

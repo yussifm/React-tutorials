@@ -1,13 +1,13 @@
 import './App.css';
-import Useeffect3 from './useEffect/Useeffect3';
+import ShortCircut from './Conditional-rendering/ShortCircut';
 
 function App() {
   
   
   return (
     <div className="App">
-      <h4>Usestate, UseEffects</h4>
-     <Useeffect3 />
+      
+     <ShortCircut />
     </div>
   );
 }
