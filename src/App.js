@@ -1,5 +1,5 @@
 import './App.css';
-import ShortCircut from './Conditional-rendering/ShortCircut';
+import Show from './Conditional-rendering/show';
 
 function App() {
   
@@ -7,7 +7,7 @@ function App() {
   return (
     <div className="App">
       
-     <ShortCircut />
+     <Show />
     </div>
   );
 }
