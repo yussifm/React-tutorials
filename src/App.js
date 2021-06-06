@@ -1,5 +1,5 @@
 import './App.css';
-import ControlInput from './Forms/ControlInput';
+import MultpleInputs from './Forms/MultpleInputs';
 
 function App() {
   
@@ -7,7 +7,7 @@ function App() {
   return (
     <div className="App">
       
-      <ControlInput />
+      <MultpleInputs />
     </div>
   );
 }

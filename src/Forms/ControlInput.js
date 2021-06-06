@@ -49,10 +49,10 @@ const ControlInput = () => {
 					/>
 				</div>
 				<div className="formControl">
-					<label htmlFor="firstsecondName"></label>
+					<label htmlFor="secondName"></label>
 					<input
 						type="text"
-						name="firstsecondName"
+						name="secondName"
 						id="secondName"
 						value={secondName}
 						onChange={(e) => setsecondName(e.target.value)}
