@@ -1,8 +1,7 @@
 import React, { useState, useEffect, useReducer } from "react";
 import Model from "./Model";
 import { data } from "../Data/data";
-import { reducer } from './reducers';
-
+import { reducer } from "./reducers";
 
 const defaultState = {
 	people: [],
@@ -15,28 +14,29 @@ const Index = () => {
 
 	const handleSubmit = (e) => {
 		e.preventDefault();
-		
+
 		if (name) {
-			const newitem = {id: new Date().getTime().toString(), name}
+			const newitem = { id: new Date().getTime().toString(), name };
 			dispatch({ type: "ADD_ITEM", payload: newitem });
-			setName('');
+			setName("");
+		} else {
+			dispatch({ type: "NO_VALUE" });
 		}
-		 
-
-		else {
-				dispatch({ type: "NO_VALUE" });
-		}
-
 	};
 
 	const closeModel = () => {
-		return dispatch({ type: "CLOSE_MODEL"})
-	}
+		return dispatch({ type: "CLOSE_MODEL" });
+	};
 
 	return (
 		<>
-				<div>
-				{state.ismodelOpen && <Model ModelContent= {state.modelContent} CloseModels = {closeModel}></Model>}
+			<div>
+				{state.ismodelOpen && (
+					<Model
+						ModelContent={state.modelContent}
+						CloseModels={closeModel}
+					></Model>
+				)}
 			</div>
 			<form onSubmit={handleSubmit}>
 				<input
@@ -52,13 +52,17 @@ const Index = () => {
 					return (
 						<div key={person.id}>
 							<h3>{person.name}</h3>
-							<button onClick={() => dispatch({type: 'REMOVE_ITEM', payload: person.id})}>Remove</button>
+							<button
+								onClick={() =>
+									dispatch({ type: "REMOVE_ITEM", payload: person.id })
+								}
+							>
+								Remove
+							</button>
 						</div>
 					);
 				})}
 			</div>
-
-		
 		</>
 	);
 };
