@@ -1,7 +1,7 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useContext } from "react";
 import { data } from "../Data/data";
 
-const Basics = () => {
+const Conbasic = () => {
 	const [people, setPeople] = useState(data);
 	const remvePerson = (id) => {
 		setPeople((people) => {
@@ -39,4 +39,4 @@ const Single = ({ id, name, removeperson }) => {
 	);
 };
 
-export default Basics;
+export default Conbasic;

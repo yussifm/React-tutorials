@@ -1,10 +1,9 @@
 import "./App.css";
-import Basics from "./7-prop-drillling/basics";
-
+import Conbasic from './8-contextApi/Conbasic';
 function App() {
 	return (
 		<div className="App">
-			<Basics />
+			<Conbasic />
 		</div>
 	);
 }
