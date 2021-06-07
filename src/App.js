@@ -1,15 +1,12 @@
-import './App.css';
-import MultpleInputs from './Forms/MultpleInputs';
+import "./App.css";
+import Index from "./6-UseReducer/Index";
 
 function App() {
-  
-  
-  return (
-    <div className="App">
-      
-      <MultpleInputs />
-    </div>
-  );
+	return (
+		<div className="App">
+			<Index />
+		</div>
+	);
 }
 
 export default App;
