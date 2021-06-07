@@ -1,10 +1,10 @@
 import "./App.css";
-import Index from "./6-UseReducer/Index";
+import Basics from "./7-prop-drillling/basics";
 
 function App() {
 	return (
 		<div className="App">
-			<Index />
+			<Basics />
 		</div>
 	);
 }
