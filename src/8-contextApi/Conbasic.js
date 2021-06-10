@@ -1,6 +1,7 @@
 import React, { useState, useContext } from "react";
 import { data } from "../Data/data";
 
+const PersonContext = React.createContext();
 const Conbasic = () => {
 	const [people, setPeople] = useState(data);
 	const remvePerson = (id) => {
@@ -10,25 +11,28 @@ const Conbasic = () => {
 	};
 
 	return (
-		<section>
-			<List people={people} removeperson={remvePerson} />
-		</section>
+		<PersonContext.Provider
+			value={{ removeperson: remvePerson, people: people }}
+		>
+			<h3>ContxtAPi /usecontxt</h3>
+			<List />
+		</PersonContext.Provider>
 	);
 };
 
-const List = ({ people, removeperson }) => {
+const List = () => {
+	const maindata = useContext(PersonContext);
 	return (
 		<>
-			{people.map((person) => {
-				return (
-					<Single key={person.id} {...person} removeperson={removeperson} />
-				);
+			{maindata.people.map((person) => {
+				return <Single key={person.id} {...person} />;
 			})}
 		</>
 	);
 };
 
-const Single = ({ id, name, removeperson }) => {
+const Single = ({ id, name }) => {
+	const { removeperson } = useContext(PersonContext);
 	return (
 		<>
 			<div>

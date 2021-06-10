@@ -1,9 +1,10 @@
 import "./App.css";
-import Conbasic from './8-contextApi/Conbasic';
+import CusHook1 from './9-Custom-hooks/CusHook1';
+
 function App() {
 	return (
 		<div className="App">
-			<Conbasic />
+			<CusHook1 />
 		</div>
 	);
 }
