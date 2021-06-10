@@ -1,10 +1,10 @@
 import "./App.css";
-import CusHook1 from './9-Custom-hooks/CusHook1';
+import Index from "./10-props-types/index";
 
 function App() {
 	return (
 		<div className="App">
-			<CusHook1 />
+			<Index />
 		</div>
 	);
 }
